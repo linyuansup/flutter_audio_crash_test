@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
             TextButton(
                 onPressed: () async {
                   final lib = DynamicLibrary.open(
-                      "D:\\93601\\Code\\testpro\\libopen_audio_engine.dll");
+                      "Paste the path of dll file here");
                   final func = lib
                       .lookupFunction<Int32 Function(), int Function()>("init");
                   final result = func();
